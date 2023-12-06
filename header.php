@@ -12,7 +12,7 @@
 
       <?php
       
-      $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+      $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed'. mysqli_error($conn));
       $row_count = mysqli_num_rows($select_rows);
 
       ?>
