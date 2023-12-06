@@ -4,9 +4,9 @@ $username = "root";
 $password = "";
 $dbname = "cinnamax";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
@@ -29,7 +29,7 @@ if ($conn->connect_error) {
     }
 
     // Generate unique username and random password
-    $username = generateUniqueUsername($SellerName, ''); // Assuming last name is not provided
+    $username = generateUniqueUsername($SellerName, ''); 
     $password = generateRandomPassword();
 
 
